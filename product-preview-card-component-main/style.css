@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0,1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: auto;
+    display: flex;
+    margin: auto;
+    min-width: 500px;
+
+}
+main {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    display: flex;
+    height: 70vh;
+}
+.imagem img {
+    width: 45vh;
+    height: 70vh;
+    border-radius: 10px 0px 0px 10px;
+}
+.produto-info {
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    width: 45vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    line-height: 0.5;
+}
+.letra-perf {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    /*transform: translateY();*/
+
+}
+
+.name-produto {
+    /*transform: translateY(-20px);
+    white-space: pre-wrap;
+    width: 200px;*/
+    display: flex;
+    width: 37vh;
+}
+.name-produto h1 {
+
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    line-height: 1.0;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 1;
+}
+
+.produto-descricao {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    width: 37vh;
+    line-height: 1.5;
+}
+.valor {
+    font-family: "Fraunces", serif;
+    font-size: 5vh;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.valor-antigo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-left: 15px;
+    font-weight: normal;
+}
+.carinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(158, 42%, 18%);
+    border-radius: 5px;
+    height: 7vh;
+    width: 36vh;
+}
+.carinho p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.carinho img {
+    margin-right: 10px;
+    height: 40%;
+    display: flex;
+}
+
+@media (max-width: 510px)  {
+    body {
+        padding: 20px;
+        margin: 0;
+        min-width: 320px;
+    }
+     main {
+    display: flex;          /* ✅ necessário para flex-direction funcionar */
+    flex-direction: column;
+    align-items: center;    /* centraliza os filhos */
+    height: auto;
+    justify-content: space-around;
+   }
+   .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 440px;
+    border-radius: 10px;
+    overflow: hidden; /* 🔑 isso remove os espaços visuais indesejados */
+    background-color: transparent;
+
+   }
+   .imagem picture,
+   .imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+   }
+
+   .produto-info {
+    width: 440px;
+    border-radius: 0 0 10px 10px;
+}
+
+    .letra-perf {
+    font-size: 12px;
+}
+
+.name-produto {
+    /*transform: translateY(-20px);
+    white-space: pre-wrap;
+    width: 200px;*/
+    display: flex;
+    width: 37vh;
+}
+
+.name-produto h1 {
+
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    line-height: 1.0;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 1;
+}
+
+}
