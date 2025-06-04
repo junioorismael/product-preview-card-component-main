@@ -12,12 +12,10 @@
 
 body {
     height: 100vh;
-    background-color: hsl(30, 38%, 92%);
     display: flex;
     align-items: center;
     justify-content: center;
-
-
+    background-color: hsl(30, 38%, 92%);
 }
 
 main {
@@ -29,11 +27,9 @@ main {
 }
 
 .card {
-    /*transform: scale(1.2);*/
     background-color: white;
     border-radius: 10px;
     display: flex;
-
 }
 
 .imagem img {
@@ -47,13 +43,11 @@ main {
     width: 488px;
     padding-left: 25px;
     padding-right: 25px;
-    /* padding: 10px; */
-    display: flex
-;
+    display: flex;
     flex-direction: column;
-    /* line-height: 3.5; */
     justify-content: space-evenly;
-    align-items: flex-start;}
+    align-items: flex-start;
+}
 
 .letra-perf {
     font-family: "Montserrat", sans-serif;
@@ -61,14 +55,12 @@ main {
     font-weight: bold;
     letter-spacing: 5px;
     color: hsl(228, 12%, 48%);
-    /*transform: translateY();*/
 
 }
 
 .name-produto {
-    font-weight: 500px;}
-    /*transform: translateY(-20px);
-    white-space: pre-wrap;*/
+    font-weight: 500px;
+}
 
 .name-produto h1 {
 
@@ -122,7 +114,7 @@ main {
 .carinho:hover {
         background-color: hsl(151, 36%, 37%);
         cursor: pointer;
-    }
+}
 
 .carinho p {
     font-family: "Montserrat", sans-serif;
@@ -139,13 +131,11 @@ main {
     display: flex;
 }
 
-/*mobile*/
-@media (max-width: 768px)  {
+/*mobile1*/
+@media (max-width: 376px)   {
 
     body {
-        height: 100%;
-        padding: 20px;
-
+        display: block;
     }
     
     main {
@@ -161,8 +151,6 @@ main {
     width: 350px;
     min-width: auto;
     border-radius: 10px;
-    /*overflow: hidden;
-    background-color: transparent;*/
    }
 
    .imagem img {
@@ -174,23 +162,14 @@ main {
 
    .produto-info {
     width: auto;
-    height: 382.36px;
-    min-height: 500px;
+    min-height: 375px;
     }
 
     .letra-perf {
-    font-size: 12px;
-    }
-
-    .name-produto {
-    /*transform: translateY(-20px);
-    white-space: pre-wrap;
-    width: 200px;*/
-    display: flex;
+    font-size: 14px;
     }
 
     .name-produto h1 {
-
     font-family: "Fraunces", serif;
     font-size: 32px;
     line-height: 1.0;
@@ -201,15 +180,122 @@ main {
         "WONK" 1;
     }
 
+    .produto-descricao {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+    }
+
+    .valor {
+        font-size: 30px;
+    }
+
+    .valor-antigo {
+        font-size: 14px;
+    }
+
     .carinho {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:hsl(158, 42%, 18%);
     border-radius: 5px;
-
+    height: 50px;
     }
 
+
+    .carinho p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    }
+
+    .carinho img {
+    margin-right: 10px;
+    height: 40%;
+    display: flex;
+    }
+
+}
+
+/*mobile2*/
+@media (min-width: 377px) and (max-width: 768px) {
+
+    body {
+        height: 100%;
+        padding: 10px;
+    }
+    
+    main {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0px;
+   }
+
+   .card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: auto;
+    border-radius: 10px;
+   }
+
+   .imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    }
+
+   .produto-info {
+    width: auto;
+    height: 382.36px;
+    min-height: 500px;
+    }
+
+    .letra-perf {
+    font-size: 14px;
+    }
+
+    .name-produto h1 {
+    font-family: "Fraunces", serif;
+    font-size: 39px;
+    line-height: 1.0;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 1;
+    }
+
+    .produto-descricao {
+        font-size: 16px;
+    }
+
+    .valor {
+    font-size: 32px;
+    }
+
+    .valor-antigo {
+    font-size: 16px;
+    }
+
+    .carinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(158, 42%, 18%);
+    border-radius: 5px;
+    height: 60px;
+
+    }
 
     .carinho p {
     font-family: "Montserrat", sans-serif;
